@@ -62,7 +62,7 @@ Reflect.isExtensible(empty); // === false
 
 ### 与 `Object.preventExtensions()` 的不同点
 
-如果该方法的 _`target`_ 参数不是一个对象（是原始值），那么将造成一个 {{jsxref("TypeError")}} 异常。对于{{jsxref("Object.preventExtensions()")}} 方法，非对象的 _`target`_ 参数将被强制转换为对象。
+如果该方法的 _`target`_ 参数不是一个对象（是原始值），那么将造成一个 {{jsxref("TypeError")}} 异常。对于{{jsxref("Object.preventExtensions()")}} 方法，非对象的 _`target`_ 参数将原样返回且不会抛出任何错误。
 
 ```js
 Reflect.preventExtensions(1);
